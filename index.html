@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Games Site</title>
+  </head>
+  <body class="text-center bg-img">
+    <div class="header container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1>Games to play in browser!</h1>
+        </div>
+      </div>
+    </div>
+    <div class="main container-fluid d-flex">
+      <div class="row w-100">
+        <div class="col-12">
+      <hr class="line"></hr>
+    </div>
+    <div class="col-12">
+      <div class="card mb-3 bg-card">
+        <div class="card-body">
+          <h5 class="card-title text">Rock-Paper-Scissors (Shoot)</h5>
+          <p class="card-text text">
+            Select a move to determine whether you are luckier than random
+            chance!
+          </p>
+          <button class="btn btn-primary" onclick="play('rock')">Rock</button>
+          <button class="btn btn-primary" onclick="play('paper')">Paper</button>
+          <button class="btn btn-primary" onclick="play('scissors')">Scissors</button>
+        </div>
+        <h2 class="card-title text"> Game Result: </h2>
+        <p class="card-text text" id="GameResult">
+          If you never play you never lose! <br></br> You also never win.
+        </p>
+        <br></br>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
